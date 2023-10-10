@@ -61,11 +61,11 @@ function Projects() {
             subtitle="Hey, glad you stopped by the projects corner! Let's keep it short and sweet—check out the cool stuff I've been working on! 😊"
         >
 
-        <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
+        <div className="grid gap-8 lg:gap-14 lg:grid-cols-2 pt-8">
             {projects.map(({id, image, title, github, demo}) => (
                 <div
                     key={id}
-                    className="max-w-2xl h-64 flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
+                    className="max-w-lg h-52 md:max-w-xl md:h-60 lg:max-w-2xl lg:h-64 flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
                 >
                     <img 
                         src={image} 
@@ -73,11 +73,11 @@ function Projects() {
                         className="w-2/3"
                     />
                     <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
-                        <h2 className="text-2xl">{title}</h2>
-                        <a className="text-5xl cursor-pointer duration-150 hover:scale-110  hover:text-rose-600" href={github} target="_blank" rel="noopener noreferrer">
+                        <h2 className="text-xl md:text-3xl lg:text-2xl font-medium text-rose-600 dark:text-white">{title}</h2>
+                        <a className="text-3xl md:text-4xl lg:text-5xl cursor-pointer duration-150 hover:scale-125  hover:text-rose-600" href={github} target="_blank" rel="noopener noreferrer">
                             <FaGithub />
                         </a>
-                        <a className="text-5xl cursor-pointer duration-150 hover:scale-110  hover:text-rose-600" href={demo} target="_blank" rel="noopener noreferrer">
+                        <a className="text-3xl md:text-4xl lg:text-5xl cursor-pointer duration-150 hover:scale-125  hover:text-rose-600" href={demo} target="_blank" rel="noopener noreferrer">
                             <FaExternalLinkSquareAlt />
                         </a>
                     </div>

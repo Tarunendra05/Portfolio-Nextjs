@@ -4,7 +4,7 @@ import Section from "./common/Section";
 import continuousLearning from "../assets/continuousLearning.png";
 import mERNStackDevelopment from "../assets/mERNStackDevelopment.png";
 import problemSolving from "../assets/problemSolving.png";
-import web from "../assets/web.png";
+import coding from "../assets/coding.png";
 
 function Services() {
 
@@ -16,7 +16,7 @@ function Services() {
         },
         {
             id: 2,
-            image: web,
+            image: coding,
             title: "Coding"
         },
         {
@@ -45,7 +45,7 @@ function Services() {
                         className="flex flex-col items-center justify-center p-5 shadow-lg dark:shadow-gray-100 rounded-xl duration-300 ease-in-out hover:scale-110"
                     >
                         <img src={image} alt={title} className="w-36 h-36 md:w-44 md:h-44 object-contain" />
-                        <h3 className="mt-5 text-base">{title}</h3>
+                        <h3 className="mt-5 text-base font-medium text-rose-600 dark:text-white">{title}</h3>
                     </div>
                 ))
             }

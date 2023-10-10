@@ -1,5 +1,6 @@
 import React from "react";
 import {FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaArrowDown} from "react-icons/fa"
+import {SiLeetcode} from "react-icons/si";
 import avatar from "../assets/avatar.png";
 
 function Hero() {
@@ -24,32 +25,37 @@ function Hero() {
             id: 4,
             link: "https://www.facebook.com/profile.php?id=100006193604545",
             icon : <FaFacebook />,
+        },
+        {
+            id: 5,
+            link: "https://leetcode.com/tarun_005/",
+            icon: <SiLeetcode />
         }
     ]
 
     window.addEventListener("scroll", function () {
         const downArrow = document.querySelector(".down-arrow");
 
-        if(this.scrollY >= 90) downArrow.classList.add("hide-down-arrow");
+        if(this.scrollY >= 110) downArrow.classList.add("hide-down-arrow");
         else downArrow.classList.remove("hide-down-arrow");
     });
 
     return (
-        <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
-            <h2 className="text-5xl text-rose-600 uppercase font-bold">Tarunendra Bahadur Singh</h2>
-            <h3 className="py-3 text-2xl">MERN Stack Developer</h3>
-            <p className="max-w-xl font-light text-gray-500">
-                Hello <span className="animate-pulse text-4xl">👋</span>, welcome to my site. I am a MERN Stack Developer, I love to work on web development and also like competitive programming.  
+        <section className="min-h-screen flex flex-col justify-start items-center p-4 text-center">
+            <h2 className="text-6xl text-rose-600 uppercase font-bold pb-2 head">Tarunendra Bahadur Singh</h2>
+            <h3 className="pb-4 text-4xl">MERN Stack Developer</h3>
+            <p className="max-w-3xl font-light text-gray-500 text-2xl">
+                Hello <span className="animate-pulse text-5xl">👋</span>, welcome to my site. I am a MERN Stack Developer, I love to work on web development and also like competitive programming.  
             </p>
 
-            <div className="flex justify-evenly py-8 lg:py-16 text-5xl w-full md:w-1/3">
+            <div className="flex justify-evenly py-6 lg:py-10 text-5xl lg:text-6xl w-full md:w-2/5 ">
                 {SOCIAL.map(({id, link, icon}) => (
                     <a 
                         href={link} 
                         key={id} 
                         target="_black" 
                         rel="noopener noreferrer"
-                        className="cursor-pointer duration-300 hover:text-rose-600"
+                        className="cursor-pointer duration-300 ease-in-out hover:scale-110 hover:text-rose-600"
                     >
                     {icon}
                     </a>
@@ -64,13 +70,13 @@ function Hero() {
                 />
                 <a href="/Tarunendra-Bahadur-Singh-Resume.pdf" 
                 download={true} 
-                className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg">
+                className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg duration-300 ease-in-out hover:scale-110">
                     Resume
                 </a>
             </div>
 
-            <div className="mt-10 down-arrow">
-                <FaArrowDown classname="text-gray-400 text-2xl animate-bounce" />
+            <div className="mt-10 down-arrow animate-bounce">
+                <FaArrowDown classname="text-gray-400 text-2xl" />
             </div>
 
         </section>
