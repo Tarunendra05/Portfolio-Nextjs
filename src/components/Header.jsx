@@ -9,9 +9,9 @@ return (
 
             <div onClick={() => setDarkMode(!darkMode)}>
             {darkMode ? (
-                <MdWbSunny className="text-3xl cursor-pointer duration-300 ease-in-out hover:scale-110"/>
+                <MdWbSunny className="text-xl cursor-pointer duration-300 ease-in-out hover:scale-110"/>
             ) : (
-                <MdNightsStay className="text-3xl cursor-pointer duration-300 ease-in-out hover:scale-110"/>
+                <MdNightsStay className="text-xl cursor-pointer duration-300 ease-in-out hover:scale-110"/>
             )}
             </div>
             

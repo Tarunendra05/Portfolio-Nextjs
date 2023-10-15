@@ -32,21 +32,21 @@ function Contact() {
             <div 
                 className=" flex flex-col items-center justify-center gap-8 text-center"
             >
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center px-4">
                     <img 
                         src={contact} 
                         alt="Contact" 
                         className="w-40 h-40"
                     />
                     <p
-                        className="max-w-xs md:max-w-md text-base md:text-lg lg:text-xl font-extralight text-center m-4 dark:text-gray-400"
+                        className="max-w-xs md:max-w-md text-sm md:text-base lg:text-lg font-extralight text-center m-4 dark:text-gray-400"
                     >
                         I am open to talk regarding freelancing or full-time opportunities.
                         Feel free to contact me using your preferred medium.
                     </p>
                 </div>
                 <div
-                    className = "flex w-full items-center justify-evenly text-4xl"
+                    className="flex w-full items-center justify-evenly text-4xl"
                 >
                     {SOCIAL.map(({ id, link, icon }) => (
                         <a 
@@ -61,7 +61,7 @@ function Contact() {
                 </div>
 
                 <div
-                    className="p-8 text-left w-full"
+                    className="p-10 text-left w-full"
                 >
                     <form 
                         action="https://getform.io/f/6aea8984-683d-41ac-acb8-d86a3aa76496" 
