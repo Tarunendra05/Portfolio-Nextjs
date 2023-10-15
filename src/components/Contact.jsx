@@ -36,10 +36,10 @@ function Contact() {
                     <img 
                         src={contact} 
                         alt="Contact" 
-                        className="w-40 h-40"
+                        className="w-32 h-32"
                     />
                     <p
-                        className="max-w-xs md:max-w-md text-sm md:text-base lg:text-lg font-extralight text-center m-4 dark:text-gray-400"
+                        className="max-w-xs md:max-w-md text-sm md:text-sm lg:text-base font-extralight text-center m-4 dark:text-gray-400"
                     >
                         I am open to talk regarding freelancing or full-time opportunities.
                         Feel free to contact me using your preferred medium.
@@ -67,7 +67,7 @@ function Contact() {
                         action="https://getform.io/f/6aea8984-683d-41ac-acb8-d86a3aa76496" 
                         method="POST"
                     >
-                        <div className="w-full">
+                        <div className="w-auto">
                             <div className="flex flex-col">
                                 <label className="capitalize text-sm py-2 font-light text-rose-600">
                                     name

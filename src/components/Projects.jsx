@@ -65,7 +65,7 @@ function Projects() {
             {projects.map(({id, image, title, github, demo}) => (
                 <div
                     key={id}
-                    className="max-w-lg h-40 md:max-w-xl md:h-44 lg:max-w-2xl lg:h-48 flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
+                    className="max-w-md h-40 md:max-w-lg md:h-44 lg:max-w-xl lg:h-48 flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
                 >
                     <img 
                         src={image} 

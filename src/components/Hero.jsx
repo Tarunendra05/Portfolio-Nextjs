@@ -43,12 +43,12 @@ function Hero() {
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-4 text-center">
             <h2 className="text-4xl text-rose-600 uppercase font-bold pb-2 head">Tarunendra Bahadur Singh</h2>
-            <h3 className="pb-6 text-2xl">MERN Stack Developer</h3>
-            <p className="max-w-3xl font-light text-gray-500 text-xl">
-                Hello <span className="animate-pulse text-2xl">👋</span>, welcome to my site. I am a MERN Stack Developer, I love to work on web development and also like competitive programming.  
+            <h3 className="pb-4 text-2xl">MERN Stack Developer</h3>
+            <p className="max-w-3xl font-light text-gray-500 text-base">
+                Hello <span className="animate-pulse text-xl">👋</span>, welcome to my site. I am a MERN Stack Developer, I love to work on web development and also like competitive programming.  
             </p>
 
-            <div className="flex justify-evenly py-6 lg:py-10 text-3xl lg:text-4xl w-full md:w-2/5 ">
+            <div className="flex justify-evenly py-4 lg:py-8 text-3xl lg:text-4xl w-full md:w-2/5 ">
                 {SOCIAL.map(({id, link, icon}) => (
                     <a 
                         href={link} 
@@ -66,7 +66,7 @@ function Hero() {
                 <img 
                     src={avatar} 
                     alt="avatar" 
-                    className="w-40 md:w-52 lg:w-58 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl"
+                    className="w-36 md:w-40 lg:w-52 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl"
                 />
                 <a href="/Tarunendra-Bahadur-Singh-Resume.pdf" 
                 download={true} 
