@@ -42,13 +42,13 @@ function Hero() {
 
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-4 text-center">
-            <h2 className="text-6xl text-rose-600 uppercase font-bold pb-2 head">Tarunendra Bahadur Singh</h2>
-            <h3 className="pb-4 text-4xl">MERN Stack Developer</h3>
-            <p className="max-w-3xl font-light text-gray-500 text-2xl">
+            <h2 className="text-4xl text-rose-600 uppercase font-bold pb-2 head">Tarunendra Bahadur Singh</h2>
+            <h3 className="pb-6 text-2xl">MERN Stack Developer</h3>
+            <p className="max-w-3xl font-light text-gray-500 text-xl">
                 Hello <span className="animate-pulse text-5xl">👋</span>, welcome to my site. I am a MERN Stack Developer, I love to work on web development and also like competitive programming.  
             </p>
 
-            <div className="flex justify-evenly py-6 lg:py-10 text-5xl lg:text-6xl w-full md:w-2/5 ">
+            <div className="flex justify-evenly py-8 lg:py-12 text-5xl lg:text-6xl w-full md:w-2/5 ">
                 {SOCIAL.map(({id, link, icon}) => (
                     <a 
                         href={link} 

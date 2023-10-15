@@ -39,7 +39,7 @@ function Contact() {
                         className="w-40 h-40"
                     />
                     <p
-                        className="max-w-xs md:max-w-md text-md md:text-xl lg:text-2xl font-extralight text-center m-4 dark:text-gray-400"
+                        className="max-w-xs md:max-w-md text-base md:text-lg lg:text-xl font-extralight text-center m-4 dark:text-gray-400"
                     >
                         I am open to talk regarding freelancing or full-time opportunities.
                         Feel free to contact me using your preferred medium.
