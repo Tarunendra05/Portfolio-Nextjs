@@ -41,21 +41,21 @@ function Hero() {
     });
 
     return (
-        <section className="min-h-screen flex flex-col justify-start items-center p-4 text-center">
-            <h2 className="text-4xl text-rose-600 uppercase font-bold pb-2 head">Tarunendra Bahadur Singh</h2>
-            <h3 className="pb-4 text-2xl">MERN Stack Developer</h3>
+        <section className="min-h-screen flex flex-col justify-start items-center px-4 pb-4 pt-1 text-center">
+            <h2 className="text-4xl text-rose-600 uppercase font-bold head">Tarunendra Bahadur Singh</h2>
+            <h3 className="pb-2 text-2xl">MERN Stack Developer</h3>
             <p className="max-w-3xl font-light text-gray-500 text-base">
                 Hello <span className="animate-pulse text-xl">👋</span>, welcome to my site. I am a MERN Stack Developer, I love to work on web development and also like competitive programming.  
             </p>
 
-            <div className="flex justify-evenly py-4 lg:py-8 text-3xl lg:text-4xl w-full md:w-2/5 ">
+            <div className="flex justify-evenly py-4 lg:py-8 text-2xl lg:text-3xl w-full md:w-2/5 ">
                 {SOCIAL.map(({id, link, icon}) => (
                     <a 
                         href={link} 
                         key={id} 
                         target="_black" 
                         rel="noopener noreferrer"
-                        className="cursor-pointer duration-300 ease-in-out hover:scale-110 hover:text-rose-600"
+                        className="cursor-pointer duration-300 ease-in-out hover:scale-125 hover:text-rose-600"
                     >
                     {icon}
                     </a>
@@ -66,7 +66,8 @@ function Hero() {
                 <img 
                     src={avatar} 
                     alt="avatar" 
-                    className="w-36 md:w-40 lg:w-52 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl"
+                    className="w-32 md:w-40 lg:w-52 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl"
+                    style={ { height: '205px' } }
                 />
                 <a href="/Tarunendra-Bahadur-Singh-Resume.pdf" 
                 download={true} 
