@@ -3,7 +3,7 @@ import Section from "./common/Section";
 import contact from "../assets/mobile.png";
 import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
-function Contact({ darkMode, setDarkMode }) {
+function Contact() {
   const SOCIAL = [
     {
       id: 1,
