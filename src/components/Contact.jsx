@@ -55,40 +55,44 @@ function Contact() {
           >
             <div className="w-auto">
               <div className="flex flex-col">
-                <label className="capitalize text-sm py-2 font-light text-rose-600">
+                <label htmlFor="nameField" className="capitalize text-sm py-2 font-light text-rose-600">
                   name
                 </label>
                 <input
+                  id="nameField"
                   type="text"
                   name="name"
                   className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                 />
               </div>
               <div className="flex flex-col my-2">
-                <label className="capitalize text-sm py-2 font-light text-rose-500">
+                <label htmlFor="phoneField" className="capitalize text-sm py-2 font-light text-rose-500">
                   phone
                 </label>
                 <input
+                  id="phoneField"
                   type="text"
                   name="phone"
                   className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                 />
               </div>
               <div className="flex flex-col my-2">
-                <label className="capitalize text-sm py-2 font-light text-rose-400">
+                <label htmlFor="emailField" className="capitalize text-sm py-2 font-light text-rose-400">
                   email
                 </label>
                 <input
+                  id="emailField"
                   type="text"
                   name="email"
                   className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                 />
               </div>
               <div className="flex flex-col">
-                <label className="capitalize text-sm py-2 font-light text-rose-300">
+                <label htmlFor="messageField" className="capitalize text-sm py-2 font-light text-rose-300">
                   Message
                 </label>
                 <textarea
+                  id="messageField"
                   name="message"
                   rows="10"
                   className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none"
