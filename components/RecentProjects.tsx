@@ -44,9 +44,9 @@ const RecentProjects = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className='flex justify-center items-center'>
-                                <a href={siteLink} className="flex lg:text-xl md:text-xs text-sm font-bold text-[#5d41a4] hover:text-[#ab8bfb]">Check Live Site</a>
-                                <FaLocationArrow className='ms-3 text-[#5d41a4] hover:text-[#ab8bfb]' />
+                            <div className='flex justify-center items-center text-[#5d41a4] hover:text-[#ab8bfb]'>
+                                <a href={siteLink} className="flex lg:text-xl md:text-xs text-sm font-bold">Check Live Site</a>
+                                <FaLocationArrow className='ms-3' />
                             </div>
                         </div>
                     </PinContainer>
